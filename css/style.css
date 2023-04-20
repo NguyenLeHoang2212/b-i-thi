@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: yellow;
+}
+h1{
+    margin-top: 100px;
+    color: red;
+}
+.container .menu{
+    display: flex;
+    border-bottom: 2px solid blue;
+    height: 10vh;
+    background: orange;
+}
+.container .menu ul{
+    display: flex;
+    width: 70%;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 20px;
+  padding: 20px ;
+ 
+}
+.container .menu ul li{
+    cursor: pointer;
+}
+.container .menu ul li:hover{
+    color: blue;
+}
+.fa-bars{
+height: 40px;
+cursor: pointer;
+display: none;
+}
+button{
+    cursor: pointer;
+   height: 35px;
+   margin: 25px 25px;
+   width: 100px;
+   border-bottom-left-radius: 50%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 50%;
+  border-bot-right-radius: 10%;
+}
+button:hover{
+    background: black;
+    color: aqua;
+}
+.container .menu ul li{
+    padding: 10px;
+    font-size: larger;
+}
+.container h1{
+    text-align: center;
+}
+.container .contain{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: 100vh;
+}
+.container .contain .top .people{
+    margin-top: -50px;
+}
+.container .contain .bot .people{
+    margin-top: -50px;
+}
+.container .contain .top .people i:hover{
+    background: blue;
+    color: burlywood;
+}
+.container .contain .bot .people i:hover{
+    background: red;
+    color: yellow
+}
+.container .contain .top{
+    display: flex;
+    flex-wrap: wrap;
+   margin-top: 50px;
+}
+
+.fas{
+    padding: 20px;
+    clip-path: polygon(50% 0, 86% 26%, 86% 80%, 50% 100%, 14% 80%, 14% 25%);
+}
+
+.container .contain .top .square{
+    width: calc(23%);
+  margin-left: 10px;
+    border: 1px solid blue;
+    background: greenyellow;
+    border-radius: 10%;
+    margin-top: 50px;
+    height: 250px;
+}
+.container .contain .bot{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.container .contain .bot .square{
+    width: calc(100%/4);
+    width: calc(23%);
+    margin-left: 10px;
+    border: 1px solid blue;
+    background: greenyellow;
+    border-radius: 10%;
+    margin-top: 70px;
+    height: 250px;
+}
+h2,p{
+    color: white;
+}
+i{
+    border-radius: 50%;
+    background: black;
+    color: white;
+    padding: 6px 10px;
+    border: 3px solid white;
+    
+}
+
+@media screen and (max-width:600px) {
+    .container .menu ul li{
+        display: none;
+    }
+    .container .contain .bot .square{
+        width: calc(100%/1);}
+        .container .contain .top .square{
+            width: calc(100%/1);}
+.container h1{
+    display: none;
+}
+.fa-bars{
+    height: 40px;
+    cursor: pointer;
+    display: block;
+    }
+}
+
+ .menu2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background: black;
+    transform: translateX(-120%);
+    z-index: -1;
+    color: white;
+  }
+  
+  .menu2.active{
+    transform: translateX(0);
+    z-index: 1;
+  }
+  
+  .menu2 ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .menu2 ul li {
+    margin-bottom: 30px;
+  }
+
